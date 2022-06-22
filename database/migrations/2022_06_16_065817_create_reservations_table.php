@@ -22,6 +22,8 @@ class CreateReservationsTable extends Migration
             $table->foreign('users_id')->references('id')->on('users')->onUpdate('cascade')->onDelete('cascade');
             $table->unsignedBigInteger('sites_id');
             $table->foreign('sites_id')->references('id')->on('sites')->onUpdate('cascade')->onDelete('cascade');
+            $table->unsignedBigInteger('services_id');
+            $table->foreign('services_id')->references('id')->on('services')->onUpdate('cascade')->onDelete('cascade');
             $table->timestamps();
         });
     }
