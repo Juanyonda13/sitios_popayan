@@ -7,4 +7,10 @@ body
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,0.6054796918767507) 0%, rgba(121,9,109,1) 53%, rgba(105,36,129,1) 68%, rgba(0,212,255,1) 100%);
 }
+.footer
+{
+    background: rgb(1,36,0);
+    background: linear-gradient(90deg, rgba(1,36,0,0.896796218487395) 0%, rgba(146,203,64,0.7791491596638656) 22%, rgba(0,212,255,1) 100%);
+}
+
 

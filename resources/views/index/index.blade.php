@@ -35,6 +35,35 @@
        </article>
        <div class="cuadro"></div>
     </section>
+  <footer class="footer container  col-lg-12 d-flex flex-wrap border-top pt-4 mw-100">
+
+        <section class="col-lg col-md-12 col-sm-12 ">
+            <ol class="text-info">Gallery</ol>
+            <ol class="text-light">Comunity</ol>
+            <ol class="text-light">Trending</ol>
+            <ol class="text-light">Picks</ol>
+        </section >
+        <section class="col-lg col-md-12 col-sm-12">
+            <ol class="text-info">Market Place</ol>
+            <ol class="text-light">Trending</ol>
+            <ol class="text-light">Best Selling</ol>
+            <ol class="text-light">Latest</ol>
+        </section>
+        <section class="col-lg col-md-12 col-sm-12 ">
+            <ol class="text-info">Magazine</ol>
+            <ol class="text-light">Art Skills</ol>
+            <ol class="text-light">Career</ol>
+            <ol class="text-light">Inspiration</ol>
+            <ol class="text-light">news</ol>
+        </section>
+        <section class="col-lg col-md-12 col-sm-12">
+            <h3>Newsletter</h3>
+            <p class="text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium quam incidunt repudiandae quos commodi minus unde quis ea beatae numquam! Quibusdam, perspiciatis recusandae. Aliquam illo officia ullam iste quibusdam aut?</p>
+            <input type="text"><br>
+            <button type="button" class="btn btn-primary mt-2">Primary</button>
+        </section>
+    </footer>
+</body>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
   </body>
 </html>
