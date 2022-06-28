@@ -18,7 +18,8 @@ use Symfony\Component\HttpKernel\DependencyInjection\RegisterControllerArgumentL
 */
 
  Route::get('/', function () {
-     return view('layouts.layouts');
+    //  return view('layouts.layouts');
+    return view('index.index');
  });
 Route::resource('/register', RegisterController::class);
 Auth::routes();
@@ -33,6 +34,9 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-
+//index
+Route::get('/index',function(){
+    return view('index.index');
+});
 Route::resource('/service', ServiceController::class);
 Route::resource('/site', SiteController::class);

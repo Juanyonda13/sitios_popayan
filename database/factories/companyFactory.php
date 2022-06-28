@@ -14,7 +14,9 @@ class companyFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'nombre'=>$this->faker->firstName();
+            'direccion'=>$this->faker->streetAddres();
+            'telefono'=>$this->faker->e164PhoneNumber();
         ];
     }
 }

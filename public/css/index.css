@@ -1,0 +1,10 @@
+.title
+{
+    padding-top: 16%;
+}
+body
+{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,0.6054796918767507) 0%, rgba(121,9,109,1) 53%, rgba(105,36,129,1) 68%, rgba(0,212,255,1) 100%);
+}
+
