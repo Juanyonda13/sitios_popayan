@@ -47,7 +47,10 @@
                 </div>
                    
                 </td>
-               <td class="">{{$site->descripcion}}</td>
+               <td class=""><div class="d-flex flex-wrap" style="font-size: 1rem; width:400px">
+                  {{$site->descripcion}}
+                   </div>
+               </td>
                <td>{{$site->tipo_actividad}}</td>
                <td>{{$site->horario_atencion}}</td>
                <td>{{$site->estado}}</td>
