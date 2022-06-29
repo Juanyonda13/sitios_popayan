@@ -18,8 +18,8 @@ use Symfony\Component\HttpKernel\DependencyInjection\RegisterControllerArgumentL
 */
 
  Route::get('/', function () {
-    //  return view('layouts.layouts');
-    return view('index.index');
+     return view('layouts.layouts');
+    // return view('index.index');
  });
 Route::resource('/register', RegisterController::class);
 Auth::routes();

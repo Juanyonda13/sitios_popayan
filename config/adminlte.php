@@ -267,19 +267,37 @@ return [
        
        
         [
+            'text'    => 'servicios',
+            'icon'    => 'fas fa-fw fa-share',
+            'submenu' => [
+                [
+                    'text' => ' insertar servicio',
+                    'route'  => 'service.create',
+                ],
+                [
+                    'text' => 'consultar servicio',
+                    'url'  => 'admin/settings',
+                ],
+                [
+                    'text' => 'eliminar servicio',
+                    'url'  => '#',
+                ],
+            ],
+        ],
+        [
             'text'    => 'sitios',
             'icon'    => 'fas fa-fw fa-share',
             'submenu' => [
                 [
-                    'text' => ' insertar sitio',
+                    'text' => ' insertar sitios',
+                    'route'  => 'service.create',
+                ],
+                [
+                    'text' => 'consultar sitios',
                     'url'  => 'admin/settings',
                 ],
                 [
-                    'text' => 'consultar sitio',
-                    'url'  => 'admin/settings',
-                ],
-                [
-                    'text' => 'eliminar sitio',
+                    'text' => 'eliminar sitios',
                     'url'  => '#',
                 ],
             ],

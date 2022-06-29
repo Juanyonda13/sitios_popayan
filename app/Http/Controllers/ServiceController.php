@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\service;
+use App\Models\site;
 use Illuminate\Http\Request;
 
 class ServiceController extends Controller
@@ -15,7 +16,7 @@ class ServiceController extends Controller
     public function index()
     {
         //
-        return view('services.create');
+        
     }
 
     /**
@@ -25,7 +26,8 @@ class ServiceController extends Controller
      */
     public function create()
     {
-        //
+        $sitios = site::All();
+        return view('services.create',compact('sitios'));
     }
 
     /**
@@ -36,7 +38,24 @@ class ServiceController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validations=request()->validate
+        ([
+                'servicio'=>'required',
+                'precio'=>'required',
+                'fotografia'=>'required',
+                'sites_id'=>'required',
+        ]);
+        if(isset($validations))
+        {
+            $servicio=new service(); 
+            $servicio->servicio=$request->servicio;
+            $servicio->precio=$request->precio;
+            $servicio->fotografia=$request->fotografia;
+            $servicio->sites_id=$request->sites_id;
+            $servicio->save();
+            session()->flash('message','Servicio creado sastifactoriamente!!');
+            return redirect()->route('service.create');
+        }
     }
 
     /**
