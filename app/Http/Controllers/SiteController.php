@@ -25,7 +25,7 @@ class SiteController extends Controller
      */
     public function create()
     {
-        //
+        return view('sites.create');
     }
 
     /**
@@ -36,7 +36,36 @@ class SiteController extends Controller
      */
     public function store(Request $request)
     {
-        //
+         $validations=request()->validate
+         ([
+             'minucipio'=>'required',
+             'sitio'=>'required',
+             'direccion'=>'required',
+             'telefono'=>'required',
+             'correo'=>'required',
+             'imagen'=>'required',
+             'descripcion'=>'required',
+             'tipo_actividad'=>'required',
+             'horario_atencion'=>'required',
+             'estado'=>'required'
+         ]);
+         if(isset($validations))
+         {
+            $site=new site();
+            $site->minucipio=$request->minucipio;
+            $site->sitio=$request->sitio;
+            $site->direccion=$request->direccion;
+            $site->telefono=$request->telefono;
+            $site->correo=$request->correo;
+            $site->imagen=$request->imagen;
+            $site->descripcion=$request->descripcion;
+            $site->tipo_actividad=$request->tipo_actividad;
+            $site->horario_atencion=$request->horario_atencion;
+            $site->estado=$request->estado;
+            $site->save();  
+            session()->flash('message','Servicio creado sastifactoriamente!!');
+            return redirect()->route('site.create');
+         }
     }
 
     /**

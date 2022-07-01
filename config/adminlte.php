@@ -290,11 +290,11 @@ return [
             'submenu' => [
                 [
                     'text' => ' insertar sitios',
-                    'route'  => 'service.create',
+                    'route'  => 'site.create',
                 ],
                 [
                     'text' => 'consultar sitios',
-                    'url'  => 'admin/settings',
+                    'route'  => 'site.index',
                 ],
                 [
                     'text' => 'eliminar sitios',
