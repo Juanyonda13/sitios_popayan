@@ -42,8 +42,9 @@
                <td>{{$site->telefono}}</td>
                <td>{{$site->correo}}</td>
                <td>
-                <div class="imagen">
-                    <img src="{{asset('img/'.$site->imagen)}}" alt="" width="200px">
+                <div class="imagen" class="d-flex flex-wrap" style="font-size: 1rem; width:600px heigth:300px">
+                   
+                    <img src="{{asset("img/".$site->imagen)}}" alt="a" width="500px">
                 </div>
                    
                 </td>
