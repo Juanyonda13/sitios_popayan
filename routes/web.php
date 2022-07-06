@@ -4,6 +4,7 @@ use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\SiteController;
 use App\Http\Controllers\PermissionController;
+use App\Http\Controllers\RoleController;
 use Illuminate\Support\Facades\Route;
 use Symfony\Component\HttpKernel\DependencyInjection\RegisterControllerArgumentLocatorsPass;
 
@@ -42,3 +43,4 @@ Route::get('/index',function(){
 Route::resource('/permission',PermissionController::class);
 Route::resource('/service', ServiceController::class);
 Route::resource('/site', SiteController::class);
+Route::resource('/rol',RoleController::class);
