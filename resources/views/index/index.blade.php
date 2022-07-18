@@ -27,7 +27,7 @@
        <article class="container title col-xl-6  col-sm-12 container-fluid">
            <section class="col fs-1 text-info ">viaja con nosotros</section>
            <p class="col fs-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi vero minus quidem voluptas repudiandae, ea, ipsum aperiam quas, debitis rem aliquid officiis soluta odit enim dolore unde tempora? Quibusdam, excepturi.</p>
-           <button type="button" class="btn btn-warning">ingresar</button>
+           <a type="submit" class="btn btn-warning" href="{{url('h')}}">ingresar</a>
        </article>
        <article class="container col-xl-6 col-sm-12">    
               <img src="img/img.png" alt="" srcset="" class="col-12" >

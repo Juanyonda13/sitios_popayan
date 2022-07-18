@@ -19,7 +19,7 @@ use Symfony\Component\HttpKernel\DependencyInjection\RegisterControllerArgumentL
 |
 */
 
- Route::get('/', function () {
+ Route::get('/h', function () {
      return view('layouts.layouts');
     // return view('index.index');
  });
@@ -37,7 +37,7 @@ Route::resource('/register', RegisterController::class);
 // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 //index
-Route::get('/index',function(){
+Route::get('/',function(){
     return view('index.index');
 });
 Route::resource('/permission',PermissionController::class);
